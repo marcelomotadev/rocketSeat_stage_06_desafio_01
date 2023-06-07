@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-style: 'Roboto', sans-serif;
+
+  --nav-default-color: hsla(240, 6%, 58%, 1);
+  --nav-emphasis-color: white;
+
+  --body-color: hsla(240, 9%, 89%, 1);
+
+  --padding-left: calc(4vw + 2rem);
+
+  font-size: 62.5%;
+}
+
+body {
+  background:black;
+  color: var(--body-color);
+  font-style: var(--font-style);
+  background-size: 100vw 100vh;
+}
+
+.homeImg {
+  background-image: url('imgs/mountains-universe-1.png');
+}
+
+.universeImg {
+  background-image: url(imgs/mountains-universe02.png);
+}
+
+.exploreImg {
+  background-image: url(imgs/mountains-universe-3.png);
+}
+
+nav {
+  display: flex;
+  padding-block: 4rem;
+  padding-left: var(--padding-left);
+  gap: 3.2rem;
+  align-items: center;
+}
+
+nav a {
+  color: var(--nav-default-color);
+  line-height: 2.2rem;
+  font-size: 2.11rem;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: var(--nav-emphasis-color);
+  transform: scale(1.1);
+}
+
+.hovered{
+  color: var(--nav-emphasis-color);
+  transform: scale(1.1);
+}
+
+nav img {
+  max-height: 4.2rem;
+  cursor: pointer;
+}
+
+#app {
+  margin-top: 6rem;
+  margin-left: calc(var(--padding-left) + 2rem);
+}
+
+#app h1 {
+  font-family: rob;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%calc (2vw + 2rem);
+}
+
+#app p {
+  width: min(calc(100% - 1rem), 64.8rem);
+  margin-top: 1.6rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+#app button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  background-color: transparent;
+
+  text-transform: uppercase;
+  cursor: pointer;
+
+  margin-top: 2.4rem;
+  padding: 1.2rem 3.2rem;
+
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+#app button:hover {
+  background-color: #ffffff;
+  color: hsla(194, 97%, 31%, 1);
+}
+
+.home {
+  display: grid;
+  min-height: 50vh;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
